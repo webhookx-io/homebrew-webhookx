@@ -5,20 +5,20 @@
 class Webhookx < Formula
   desc "an open-source webhooks gateway for message receiving, processing, and delivering."
   homepage "https://github.com/webhookx-io/webhookx"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/webhookx-io/webhookx/releases/download/v0.4.0/webhookx_0.4.0_darwin_amd64.tar.gz"
-      sha256 "62c5f4d132ab004c1f56697edec8f5a69e8dc41f474c43d12c9ce7c642e38a74"
+      url "https://github.com/webhookx-io/webhookx/releases/download/v0.5.0/webhookx_0.5.0_darwin_amd64.tar.gz"
+      sha256 "efc54294d62c5dbc5ba6a0098ab387e0cad1534f9d90ad68f70b69cc209d6f08"
 
       def install
         bin.install "webhookx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/webhookx-io/webhookx/releases/download/v0.4.0/webhookx_0.4.0_darwin_arm64.tar.gz"
-      sha256 "21e86398901b061fe3c3d755099ff31eb0bcae10606d0a9115e75ed9445dd3eb"
+      url "https://github.com/webhookx-io/webhookx/releases/download/v0.5.0/webhookx_0.5.0_darwin_arm64.tar.gz"
+      sha256 "585d5f4262582ce3bb655be5de3899de48b5c6f298eb7ff43f09c18f8d9a22f4"
 
       def install
         bin.install "webhookx"
@@ -29,8 +29,8 @@ class Webhookx < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webhookx-io/webhookx/releases/download/v0.4.0/webhookx_0.4.0_linux_amd64.tar.gz"
-        sha256 "45db5a644925ce99d562087836279c4f77b91f239b57713b6fcc0bfb02ce9424"
+        url "https://github.com/webhookx-io/webhookx/releases/download/v0.5.0/webhookx_0.5.0_linux_amd64.tar.gz"
+        sha256 "799c030ae15a6633e4f5f7833b54830d369f8ea171ae0829c29a9275a6bee437"
 
         def install
           bin.install "webhookx"
@@ -39,8 +39,8 @@ class Webhookx < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/webhookx-io/webhookx/releases/download/v0.4.0/webhookx_0.4.0_linux_arm64.tar.gz"
-        sha256 "28350f79197ba3f72d98a390d9cec1cf45975c3c70104968cf21f90a8c680ac3"
+        url "https://github.com/webhookx-io/webhookx/releases/download/v0.5.0/webhookx_0.5.0_linux_arm64.tar.gz"
+        sha256 "fbe8680dfe38fc52e59f334624b49bab995bd183da5bc870cabf719abba97d2e"
 
         def install
           bin.install "webhookx"
